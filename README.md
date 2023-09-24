@@ -8,6 +8,7 @@ __Mixup Your Own Pairs__ <br>
 <div align="center">
   <img src="teaser/method.png" alt="alt text" width="600"/>
 </div>
+
 ## Usage
 We separate the codebase for different datasets into different subfolders. Please go into the subfolders for more information (e.g., installation, dataset preparation, training, evaluation & models).
 
@@ -19,10 +20,6 @@ We provide examples of how SupReMix can be applied to your own datasets. There a
 
 
 ### Mix-neg & Mix-pos
-<div align="center">
-  <img src="teaser/matrix.png" alt="alt text" width="600"/>
-</div>
-
 
 ```python
 from torch.distributions.beta import Beta
@@ -108,6 +105,11 @@ def mixing_func(target, feature, mix_neg, mix_pos, n, b):
 
     return mixtures_rearranged, myop_mask_rearranged, myop_label_rearranged
 ```
+
+<div align="center">
+  <img src="teaser/matrix.png" alt="alt text" width="600"/>
+</div>
+
 
 ### Distance Magnifying 
 ```python
