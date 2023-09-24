@@ -25,10 +25,9 @@ proves superior in a range of regression challenges such as transfer learning, i
 training data, and scenarios with fewer training samples.
 
 ## Overview
-<div style="text-align:center;">
+<div align="center">
   <img src="teaser/method.png" alt="alt text" width="600"/>
 </div>
-
 ## Usage
 We separate the codebase for different datasets into different subfolders. Please go into the subfolders for more information (e.g., installation, dataset preparation, training, evaluation & models).
 
@@ -40,7 +39,7 @@ We provide examples of how SupReMix can be applied to your own datasets. There a
 
 
 ### Mix-neg & Mix-pos
-<div style="text-align:center;">
+<div align="center">
   <img src="teaser/matrix.png" alt="alt text" width="600"/>
 </div>
 
@@ -165,9 +164,10 @@ python data/preprocess_agedb.py
 
 #### Dependencies
 
-- PyTorch (>= 1.2, tested on 1.6)
-- tensorboard_logger
-- numpy, pandas, scipy, tqdm, matplotlib, PIL, wget, einops
+```bash
+pip install torch==1.6.0 tensorboard_logger numpy pandas scipy tqdm matplotlib Pillow wget einops
+```
+
 
 ### 1. Train baselines
 

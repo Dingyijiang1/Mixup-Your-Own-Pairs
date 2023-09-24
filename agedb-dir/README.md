@@ -16,9 +16,10 @@ python data/preprocess_agedb.py
 
 #### Dependencies
 
-- PyTorch (>= 1.2, tested on 1.6)
-- tensorboard_logger
-- numpy, pandas, scipy, tqdm, matplotlib, PIL, wget, einops
+```bash
+pip install torch==1.6.0 tensorboard_logger numpy pandas scipy tqdm matplotlib Pillow wget einops
+```
+
 
 ## Code Overview
 
