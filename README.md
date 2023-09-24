@@ -4,26 +4,6 @@ This repository contains the implementation code for paper: <br>
 __Mixup Your Own Pairs__ <br>
 
 
-## Mixup your own pairs for supervised contrastive regression
-In the domain of representation learning, regression has traditionally received less
-attention than classification. Directly employing representation learning techniques
-designed for classification to regression often results in fragmented representations,
-yielding sub-optimal performance. In this paper, we argue that the potential of
-contrastive learning for regression has been overshadowed due to the neglect of two
-crucial aspects: ordinality-awareness and hardness. To address these challenges, we
-advocate "mixup your own pairs”. Specifically, we introduce **Sup**ervised Contrastive
-Learning for **Re**gression with **Mix**up (__SupReMix__). Rather than limiting contrastive
-pairs to real/augmented samples, SupReMix takes anchor-inclusive mixtures (mixup of
-the anchor and a distinct sample) as hard negative pairs and anchor-exclusive mixtures
-(mixup of two distinct samples) as hard positive pairs on the embedding level, to
-formulate harder contrastive pairs by integrating richer ordinality information. 
-Through extensive experiments on six regression datasets including 2D images, volumetric
-images, text, tabular data, and time-series signals, coupled with theoretical analysis,
-we demonstrate that SupReMix pre-training fosters continuous ordered representations
-of regression data, enhancing performance of regression tasks. Furthermore, SupReMix
-proves superior in a range of regression challenges such as transfer learning, imbalanced
-training data, and scenarios with fewer training samples.
-
 ## Overview
 <div align="center">
   <img src="teaser/method.png" alt="alt text" width="600"/>
