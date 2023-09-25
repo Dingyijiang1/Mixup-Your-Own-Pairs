@@ -11,7 +11,7 @@ This repository contains the implementation of __SupReMix__ on *IMDB-WIKI* datas
 python download_imdb_wiki.py
 ```
 
-2. __(Optional)__ We have provided required IMDB-WIKI-DIR meta file `imdb_wiki.csv` to set up balanced val/test set in folder `./data`. To reproduce the results in the paper, please directly use this file. You can also generate it using
+2. We have provided required IMDB-WIKI meta file `imdb_wiki.csv` to set up balanced val/test set in folder `./data`. To reproduce the results in the paper, please directly use this file. You can also generate it using
 
 ```bash
 python data/create_imdb_wiki.py
