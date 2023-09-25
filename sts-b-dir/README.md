@@ -71,5 +71,5 @@ We provide below reproduced checkpoints on STS-B-DIR.
 
 |   Model   | MSE | MAE | G-Mean | Pearson | Spearman | Download |
 | :-------: | :-----: | :-------: | :---------: | :------: | :------: | :------: |
-|    SupReMix    |  0.893  |   0.759   |    0.505    |   0.760  | 0.763 |[model](https://drive.google.com/file/d/1i9vaEJEf40MvQUGc_NCaKkU2Khs3RCkT/view?usp=sharing) |
+|    SupReMix    |  0.893  |   0.759   |    0.505    |   0.760  | 0.763 |[model](https://figshare.com/s/63b68442e1094c064879) |
 

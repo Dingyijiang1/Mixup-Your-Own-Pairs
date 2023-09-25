@@ -58,5 +58,5 @@ python train_linear.py --pretrain </checkpoint_folder> --store_root </checkpoint
 #### Pretrained weights 
 
 __SupReMix__, MAE All 7.12 (*MAE All-shot*)
-[(model)](https://drive.google.com/file/d/1d_Drd68Re7yRhnNrEmpe5MMmE3r6WltJ/view?usp=sharing) <br>
+[(model)](https://figshare.com/s/fc7bd5844a4ee25e9695) <br>
 
