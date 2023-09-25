@@ -55,8 +55,3 @@ python train_supremix.py --contrastive_method supremix --store_root </checkpoint
 python train_linear.py --pretrain </checkpoint_folder> --store_root </checkpoint_root> --data_dir </data_folder> 
 ```
 
-#### Pretrained weights 
-
-__SupReMix__, MAE All 7.12 (*MAE All-shot*)
-[(model)](https://figshare.com/s/fc7bd5844a4ee25e9695) <br>
-
