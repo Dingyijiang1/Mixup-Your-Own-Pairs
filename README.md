@@ -168,6 +168,3 @@ python train_supremix.py --contrastive_method supremix --store_root </checkpoint
 python train_linear.py --pretrain </checkpoint_folder> --store_root </checkpoint_root> --data_dir </data_folder> 
 ```
 
-## Acknowledgment
-
-The code is based on [Yang et al., Delving into Deep Imbalanced Regression, ICML 2021](https://github.com/YyzHarry/imbalanced-regression). 
