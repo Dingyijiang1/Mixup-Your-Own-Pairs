@@ -51,8 +51,7 @@ class EmpiricalCDF:
         return cdf_values_x
 
 class SupConLoss_v2(nn.Module):
-    """modified Supervised Contrastive Learning: https://arxiv.org/pdf/2004.11362.pdf.
-    It also supports the mix-neg, mix-pos, myop"""
+
     def __init__(self, temperature=0.07, contrast_mode='all',
                  base_temperature=0.07, feature_sim='cosine'):
         super(SupConLoss_v2, self).__init__()
@@ -103,9 +102,6 @@ class SupConLoss_v2(nn.Module):
 
     def forward(self, features, labels=None, mask=None, mixtures=None, myop_mask=None, myop_label=None, use_weight=False, distance='L1', feature_sim='cosine'):
         """Compute loss for model. If both `labels` and `mask` are None,
-        it degenerates to SimCLR unsupervised loss:
-        https://arxiv.org/pdf/2002.05709.pdf
-
         Args:
             features: hidden vector of shape [bsz, n_views, dim].
             labels: ground truth of shape [bsz].

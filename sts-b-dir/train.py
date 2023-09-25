@@ -89,7 +89,7 @@ def main(arguments):
     parser.add_argument('--reweight', type=str, default='none', choices=['none', 'sqrt_inv', 'inverse'], help='cost-sensitive reweighting scheme')
     # two-stage training: RRT
     parser.add_argument('--retrain_fc', action='store_true', default=False, help='whether to retrain last regression layer (regressor)')
-    parser.add_argument('--pretrained', type=str, default='/root/autodl-tmp/checkpoint_linear/sts_mse_linear_sts_mse_myop_0.1_1.0_128_L1_inv_seed_111_valint_400_patience_10_adam_0.0001_128_seed_111_valint_400_patience_10_adam_0.0001_128/model_state_best.th', help='pretrained checkpoint file path to load backbone weights for RRT')
+    parser.add_argument('--pretrained', type=str, default='/checkpoint_linear/model_state_best.th', help='pretrained checkpoint file path to load backbone weights for RRT')
     # evaluate only
     parser.add_argument('--evaluate', action='store_true', default=False, help='evaluate only flag')
     parser.add_argument('--eval_model', type=str, default='', help='the model to evaluate on; if not specified, use the default best model in store_dir')

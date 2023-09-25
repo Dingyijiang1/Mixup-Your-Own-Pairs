@@ -48,8 +48,6 @@ class EmpiricalCDF:
         return cdf_values_x
 
 class SupConLoss(nn.Module):
-    """Supervised Contrastive Learning: https://arxiv.org/pdf/2004.11362.pdf.
-    It also supports the unsupervised contrastive loss in SimCLR"""
     def __init__(self, temperature=0.07, contrast_mode='all',
                  base_temperature=0.07, feature_sim='cosine'):
         super(SupConLoss, self).__init__()
@@ -59,18 +57,6 @@ class SupConLoss(nn.Module):
         self.feature_sim = feature_sim
 
     def forward(self, features, labels=None, mask=None):
-        """Compute loss for model. If both `labels` and `mask` are None,
-        it degenerates to SimCLR unsupervised loss:
-        https://arxiv.org/pdf/2002.05709.pdf
-
-        Args:
-            features: hidden vector of shape [bsz, n_views, ...].
-            labels: ground truth of shape [bsz].
-            mask: contrastive mask of shape [bsz, bsz], mask_{i,j}=1 if sample j
-                has the same class as sample i. Can be asymmetric.
-        Returns:
-            A loss scalar.
-        """
         device = (torch.device('cuda')
                   if features.is_cuda
                   else torch.device('cpu'))
@@ -142,8 +128,6 @@ class SupConLoss(nn.Module):
         return loss
 
 class SupConLoss_v2(nn.Module):
-    """modified Supervised Contrastive Learning: https://arxiv.org/pdf/2004.11362.pdf.
-    It also supports the mix-neg, mix-pos, myop"""
     def __init__(self, temperature=0.07, contrast_mode='all',
                  base_temperature=0.07, feature_sim='cosine'):
         super(SupConLoss_v2, self).__init__()
@@ -191,9 +175,6 @@ class SupConLoss_v2(nn.Module):
 
     def forward(self, features, labels=None, mask=None, mixtures=None, myop_mask=None, myop_label=None, use_weight=False, distance='L1', feature_sim='cosine'):
         """Compute loss for model. If both `labels` and `mask` are None,
-        it degenerates to SimCLR unsupervised loss:
-        https://arxiv.org/pdf/2002.05709.pdf
-
         Args:
             features: hidden vector of shape [bsz, n_views, dim].
             labels: ground truth of shape [bsz].
@@ -320,7 +301,6 @@ class SupConLoss_v2(nn.Module):
 
 def supcr_loss(features, labels, tau=2.0):
     """
-    self implemented SupCR loss from https://arxiv.org/abs/2210.01189
     features: Tensor of shape [N, 2, D], where N is the batch size and D is the feature dimension.
     labels: Tensor of shape [N] representing labels.
     tau: temperature parameter.

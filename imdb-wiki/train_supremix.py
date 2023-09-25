@@ -132,9 +132,6 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr) if args.optimizer == 'adam' else \
         torch.optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
 
-
-
-
     if args.resume:
         if os.path.isfile(args.resume):
             print(f"===> Loading checkpoint '{args.resume}'")

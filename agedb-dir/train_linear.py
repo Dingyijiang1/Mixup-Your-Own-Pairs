@@ -51,7 +51,7 @@ parser.add_argument('--retrain_fc', action='store_true', default=False, help='wh
 
 # training/optimization related
 parser.add_argument('--dataset', type=str, default='agedb', choices=['imdb_wiki', 'agedb'], help='dataset name')
-parser.add_argument('--data_dir', type=str, default='/root/mixup-your-own-pairs/imbalanced-regression/agedb-dir/data', help='data directory')
+parser.add_argument('--data_dir', type=str, default='/agedb-dir/data', help='data directory')
 parser.add_argument('--model', type=str, default='resnet50', help='model name')
 parser.add_argument('--store_root', type=str, default='/checkpoint_linear', help='root path for storing checkpoints, logs')
 parser.add_argument('--store_name', type=str, default='', help='experiment store name')

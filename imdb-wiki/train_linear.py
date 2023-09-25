@@ -24,7 +24,7 @@ os.environ["KMP_WARNINGS"] = "FALSE"
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 # linear probe related
-parser.add_argument('--pretrain', default='imdb_wiki_resnet50_simclr_adam_l1_0.001_128')
+parser.add_argument('--pretrain', default='')
 parser.add_argument('--with_proj', action='store_true', default=False)
 
 # imbalanced related
