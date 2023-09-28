@@ -12,7 +12,7 @@ __Mixup Your Own Pairs__ <br>
 ## Usage
 We separate the codebase for different datasets into different subfolders. Please go into the subfolders for more information (e.g., installation, dataset preparation, training, evaluation & models).
 
-#### __IMDB-WIKI__ &nbsp;|&nbsp; __AgeDB-DIR__ &nbsp;|&nbsp; __STS-B-DIR__ &nbsp;|&nbsp; __UCI-airfoil__ &nbsp;|&nbsp; UK Biobank  &nbsp;|&nbsp; HCP-lifespan
+#### __IMDB-WIKI__ &nbsp;|&nbsp; __AgeDB-DIR__ &nbsp;|&nbsp; __STS-B-DIR__ &nbsp;|&nbsp; __UCI-airfoil__ &nbsp;|&nbsp; UK Biobank  &nbsp;|&nbsp; HCP-Aging
 
 ## Code Preview
 We provide examples of how SupReMix can be applied to your own datasets. There are three components in SupReMix: (1) Mix-neg, (2) Mix-pos, and (3) Distance Magnifying. We provide the code for each component in the following sections.
